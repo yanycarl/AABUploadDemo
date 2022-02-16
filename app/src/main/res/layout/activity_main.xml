@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/open_color_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="打开颜色条"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/close_color_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="关闭颜色条"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/open_text_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="打开文本条"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/close_text_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="关闭文本条"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#278332"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="dyfiuwegfkjdsbfkjshdasldhsjldshdljsqdhaksjdaskjdasdkjadaskjdbasdasbdasndbasjkdgaskjdsabdkjasbdaskjdbasdjksabdajksdbaskjdasbdjkasdb"
+            />
+
+    </LinearLayout>
+
+    <com.guango.mygiftdisplay.MyIconViewHolder
+        android:layout_width="88dp"
+        android:layout_height="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#2E2E2E"
+        app:layout_constraintBottom_toTopOf="@+id/dialog">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/color_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/action_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:text="Text"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#2E2E2E"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
