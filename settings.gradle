@@ -1,2 +1,6 @@
 include ':app'
 rootProject.name='MyGiftDisplay'
+include ':annotations'
+include ':base'
+include ':polling'
+include ':annotationgenerator'

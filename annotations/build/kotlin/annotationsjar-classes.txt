@@ -1,0 +1,1 @@
+/Users/caoyanyao/Documents/Android_projects/Live/MyAndroidDemo/annotations/build/classes/java/main/com/guango/libraries/annotations/ServiceImpl.class
